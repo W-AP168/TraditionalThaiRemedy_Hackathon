@@ -1,31 +1,31 @@
 herb_id,sci_name,safety_level,safety_note
-ขิง,Zingiber officinale Roscoe,caution,ระวังในผู้ที่ใช้ยาต้านการแข็งตัวของเลือด
-ดีปลี,Piper retrofractum Vahl,none,
-พริกไทย,Piper nigrum L.,none,
-มะกรูด,Citrus hystrix DC.,none,
-ว่านน้ำ,Acorus calamus L.,caution,มีสาร β-asarone ไม่ควรใช้ต่อเนื่องนาน
-กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,none,
-ดอกจันทน์,Myristica fragrans Houtt. (aril),caution,ขนาดสูงทำให้เวียนศีรษะ ใจสั่น
-ลูกจันทน์,Myristica fragrans Houtt. (seed),caution,ขนาดสูงทำให้เวียนศีรษะ ใจสั่น
 กระวาน,Amomum testaceum Ridl.,none,
-การบูร,Cinnamomum camphora (L.) J.Presl,caution,ห้ามกินในปริมาณมาก เป็นพิษต่อระบบประสาท
-สมอไทย,Terminalia chebula Retz.,none,
-สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,none,
-มะขามป้อม,Phyllanthus emblica L.,none,
-ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,none,
 กระเทียม,Allium sativum L.,caution,ระวังในผู้ที่ใช้ยาต้านการแข็งตัวของเลือด
-ชะเอมเทศ,Glycyrrhiza glabra L.,caution,ใช้นานอาจทำให้ความดันสูง โพแทสเซียมต่ำ
-เจตมูลเพลิงแดง,Plumbago indica L.,danger,ระคายเคืองรุนแรง ห้ามใช้ในหญิงตั้งครรภ์
-แห้วหมู,Cyperus rotundus L.,none,
-มหาหิงคุ์,Ferula assa-foetida L.,none,
-เกลือสินเธาว์,Sodium chloride (rock salt),none,
-ไคร้เครือ,Aristolochia pierrei Lecomte,danger,มีสาร aristolochic acid เป็นพิษต่อไตและก่อมะเร็ง ห้ามเตรียมใช้เอง
-บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,caution,ใช้ต่อเนื่องนานอาจเป็นพิษต่อตับ
-ฟ้าทะลายโจร,Andrographis paniculata (Burm.f.) Nees,caution,ห้ามใช้ในหญิงตั้งครรภ์
-ขมิ้นชัน,Curcuma longa L.,none,
 กะเพรา,Ocimum tenuiflorum L.,none,
+กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,none,
+การบูร,Cinnamomum camphora (L.) J.Presl,caution,ห้ามกินในปริมาณมาก เป็นพิษต่อระบบประสาท
+ขมิ้นชัน,Curcuma longa L.,none,
+ขิง,Zingiber officinale Roscoe,caution,ระวังในผู้ที่ใช้ยาต้านการแข็งตัวของเลือด
+ชะเอมเทศ,Glycyrrhiza glabra L.,caution,ใช้นานอาจทำให้ความดันสูง โพแทสเซียมต่ำ
+ดอกจันทน์,Myristica fragrans Houtt. (aril),caution,ขนาดสูงทำให้เวียนศีรษะ ใจสั่น
+ดีปลี,Piper retrofractum Vahl,none,
 ตะไคร้,Cymbopogon citratus (DC.) Stapf,none,
+บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,caution,ใช้ต่อเนื่องนานอาจเป็นพิษต่อตับ
+พริกไทย,Piper nigrum L.,none,
+ฟ้าทะลายโจร,Andrographis paniculata (Burm.f.) Nees,caution,ห้ามใช้ในหญิงตั้งครรภ์
+มหาหิงคุ์,Ferula assa-foetida L.,none,
+มะกรูด,Citrus hystrix DC.,none,
+มะขามป้อม,Phyllanthus emblica L.,none,
+ลูกจันทน์,Myristica fragrans Houtt. (seed),caution,ขนาดสูงทำให้เวียนศีรษะ ใจสั่น
+ว่านน้ำ,Acorus calamus L.,caution,มีสาร β-asarone ไม่ควรใช้ต่อเนื่องนาน
+สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,none,
+สมอไทย,Terminalia chebula Retz.,none,
 อบเชย,Cinnamomum verum J.Presl,none,
+เกลือสินเธาว์,Sodium chloride (rock salt),none,
+เจตมูลเพลิงแดง,Plumbago indica L.,danger,ระคายเคืองรุนแรง ห้ามใช้ในหญิงตั้งครรภ์
+เทียนดำ,Nigella sativa L.,none,
+แห้วหมู,Cyperus rotundus L.,none,
 โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,none,
 โกฐเขมา,Atractylodes lancea (Thunb.) DC.,none,
-เทียนดำ,Nigella sativa L.,none,
+ไคร้เครือ,Aristolochia pierrei Lecomte,danger,มีสาร aristolochic acid เป็นพิษต่อไตและก่อมะเร็ง ห้ามเตรียมใช้เอง
+ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,none,

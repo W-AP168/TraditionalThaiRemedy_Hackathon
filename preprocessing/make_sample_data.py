@@ -21,7 +21,7 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 SCRIPTURES = [
     ("WRO", "คัมภีร์จารึกวัดราชโอรสาราม", "Wat Ratchaorasaram inscriptions"),
     ("NR", "คัมภีร์โอสถพระนารายณ์", "Osot Phra Narai"),
-    ("RM", "ตำรายาโรงพระโอสถ รัชกาลที่ 2", "Royal Pharmacy of King Rama II"),
+    ("WP", "จารึกตำรายาวัดโพธิ์", "Wat Pho inscriptions"),
 ]
 
 # herb_id (canonical Thai name), scientific name, safety level, safety note
@@ -153,15 +153,47 @@ def generate(seed: int = 7, n_recipes: int = 180) -> dict[str, pd.DataFrame]:
     }
 
 
+EXAMPLE_DIR = DATA_DIR / "examples"
+
+
+def write_team_csvs(tables: dict[str, pd.DataFrame], out: Path = EXAMPLE_DIR) -> None:
+    """The same data in the team's format: per scripture, 1 herb file + 1 symptom file."""
+    out.mkdir(parents=True, exist_ok=True)
+    for old in out.glob("*.csv"):
+        old.unlink()
+    herbs = tables["herbs"].set_index("herb_id")["sci_name"]
+    ing = tables["ingredients"].merge(tables["prescriptions"][["recipe_id", "scripture_id", "name_th"]], on="recipe_id")
+    sym = tables["symptoms"].merge(tables["prescriptions"][["recipe_id", "scripture_id"]], on="recipe_id")
+    for book in tables["scriptures"]["scripture_id"]:
+        h = ing[ing["scripture_id"] == book]
+        pd.DataFrame({
+            "รหัสตำรับ": h["recipe_id"],
+            "ชื่อตำรับ": h["name_th"],
+            "ชื่อสมุนไพร": h["herb_raw"],
+            "ชื่อวิทยาศาสตร์": h["herb_raw"].map(herbs).fillna(""),
+            "ปริมาณ": h["amount"],
+        }).to_csv(out / f"{book}_herbs.csv", index=False, encoding="utf-8-sig")
+        s = sym[sym["scripture_id"] == book]
+        pd.DataFrame({"รหัสตำรับ": s["recipe_id"], "อาการ": s["symptom"]}).to_csv(
+            out / f"{book}_symptoms.csv", index=False, encoding="utf-8-sig")
+
+
 def main() -> None:
-    DATA_DIR.mkdir(exist_ok=True)
+    from preprocessing.import_team_csvs import build
+    from core.team_csv import read_folder
+    from preprocessing.prepare_data import publish
+
     tables = generate()
-    for name, df in tables.items():
-        df.to_csv(DATA_DIR / f"{name}.csv", index=False)
-    meta = {"version": "0.1-sample", "updated": "2026-10-05", "is_sample": True}
-    (DATA_DIR / "dataset.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"wrote sample dataset to {DATA_DIR}: "
-          f"{len(tables['prescriptions'])} recipes, {len(tables['ingredients'])} ingredient rows")
+    write_team_csvs(tables)
+    rep, _ = build(read_folder(EXAMPLE_DIR))
+    for name in ("prescriptions",):  # keep the sample's extra columns (form, original text)
+        rep.tables[name] = rep.tables[name].drop(columns=["form", "original_text", "page_ref"]).merge(
+            tables[name][["recipe_id", "form", "original_text", "page_ref"]], on="recipe_id", how="left").fillna("")
+    for old in DATA_DIR.glob("*.csv"):
+        old.unlink()
+    (DATA_DIR / "dataset.json").unlink(missing_ok=True)
+    publish(rep, "0.1-sample", "ข้อมูลตัวอย่าง (สังเคราะห์)", is_sample=True)
+    print(f"wrote 6 example CSVs to {EXAMPLE_DIR} and imported them into {DATA_DIR}")
 
 
 if __name__ == "__main__":

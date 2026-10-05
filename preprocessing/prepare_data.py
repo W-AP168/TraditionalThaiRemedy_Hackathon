@@ -146,7 +146,7 @@ def list_versions(data_dir: Path = DATA_DIR) -> list[dict]:
     return out
 
 
-def publish(rep: Report, version: str, note: str = "", data_dir: Path = DATA_DIR) -> Path:
+def publish(rep: Report, version: str, note: str = "", data_dir: Path = DATA_DIR, is_sample: bool = False) -> Path:
     """Archive the current data, then write the new tables as the live dataset."""
     if not rep.can_publish:
         raise ValueError("report has blocking errors")
@@ -163,7 +163,7 @@ def publish(rep: Report, version: str, note: str = "", data_dir: Path = DATA_DIR
     meta = {
         "version": version,
         "updated": dt.date.today().isoformat(),
-        "is_sample": False,
+        "is_sample": is_sample,
         "note": note,
         "n_recipes": int(rep.tables["prescriptions"]["recipe_id"].nunique()),
     }

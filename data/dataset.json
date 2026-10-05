@@ -1,5 +1,7 @@
 {
   "version": "0.1-sample",
   "updated": "2026-10-05",
-  "is_sample": true
+  "is_sample": true,
+  "note": "ข้อมูลตัวอย่าง (สังเคราะห์)",
+  "n_recipes": 180
 }

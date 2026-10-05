@@ -8,16 +8,27 @@ d = ui.ds()
 st.title("ค้นหาจากอาการ")
 st.write("เลือกอาการหลัก แล้วเพิ่มอาการร่วมเพื่อให้ผลแม่นขึ้น")
 
-groups = d.symptom_groups.groupby("symptom_group")["symptom"].apply(list).to_dict()
-all_symptoms = sorted(d.symptoms["symptom"].unique())
+all_symptoms = d.symptoms["symptom"].value_counts()
+
+
+@st.cache_data(show_spinner=False)
+def co_symptoms(fp: str, main: str, top: int = 10) -> list[str]:
+    """Symptoms most often listed together with `main` in the same recipe."""
+    sym = ui.ds().symptoms
+    ids = sym.loc[sym["symptom"] == main, "recipe_id"]
+    others = sym[sym["recipe_id"].isin(ids) & (sym["symptom"] != main)]
+    return others["symptom"].value_counts().head(top).index.tolist()
+
 
 with st.container(border=True):
-    main = st.pills("1. อาการหลัก", all_symptoms, key="main_symptom")
-    related = []
-    if main:
-        group = next((g for g, ss in groups.items() if main in ss), None)
-        related = [s for s in groups.get(group, []) if s != main]
-    extra = st.pills("2. อาการร่วม (ไม่บังคับ)", related, selection_mode="multi", key="extra_symptoms") if related else []
+    main = st.selectbox(
+        "1. อาการหลัก", all_symptoms.index.tolist(), index=None, key="main_symptom",
+        placeholder="พิมพ์หรือเลือกอาการ เช่น ไข้",
+        format_func=lambda s: f"{s} ({all_symptoms[s]} ตำรับ)",
+    )
+    related = co_symptoms(d.fingerprint, main) if main else []
+    extra = st.pills("2. อาการร่วม (ไม่บังคับ) · อาการที่มักพบคู่กันในตำรับ", related,
+                     selection_mode="multi", key="extra_symptoms") if related else []
 
 selected = ([main] if main else []) + list(extra or [])
 if not selected:
