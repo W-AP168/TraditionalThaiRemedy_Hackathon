@@ -19,6 +19,17 @@ streamlit run app.py
 The repo ships with a **synthetic sample dataset** (`data/`, 180 recipes, built from `data/examples/` by `python -m preprocessing.make_sample_data`) so the app runs today.
 Every page shows a banner while it is in use. The numbers are not results from the real scriptures.
 
+## Put it online (Streamlit Community Cloud, free)
+
+1. Go to [share.streamlit.io](https://share.streamlit.io), sign in with GitHub, click **Create app**.
+2. Repo `W-AP168/TraditionalThaiRemedy_Hackathon`, branch `main` (or this PR's branch), main file `app.py`.
+3. **Advanced settings → Secrets**: `lab_password = "..."` (protects the Research Lab and data upload).
+4. **Deploy** → you get a public `….streamlit.app` link.
+
+Data published on the website is lost when the cloud app restarts. To keep it: จัดการข้อมูล →
+**ดาวน์โหลดชุดข้อมูล (.zip)** → unzip over `data/` → commit to GitHub (the app redeploys itself).
+The app sleeps after a few days without visitors; open the link a few minutes before a demo.
+
 ## Pages
 
 | Explore (public) | Research Lab 🔬 |

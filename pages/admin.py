@@ -1,8 +1,12 @@
+import io
+import zipfile
+
 import pandas as pd
 import streamlit as st
 
 import ui
 from core import cache
+from core.data_loader import DATA_DIR
 from core.team_csv import SCRIPTURE_NAMES
 from preprocessing.import_team_csvs import RAW_DIR, import_files
 from preprocessing.prepare_data import list_versions, prepare, publish, read_excel
@@ -93,6 +97,29 @@ if "import" in st.session_state:
 st.markdown("### Pipeline")
 st.markdown("CSV/Excel → ตรวจคอลัมน์ → แยกคัมภีร์ → ตัดช่องว่าง → รวมชื่อพ้อง → ตรวจซ้ำ/ค่าว่าง → "
             "Binary matrix → Apriori → Permutation test → **Publish**")
+
+st.markdown("### เก็บข้อมูลให้ถาวร")
+st.info(
+    "บน Streamlit Cloud ไฟล์ที่อัปโหลด/เผยแพร่จะหายเมื่อแอปรีสตาร์ต "
+    "ให้ดาวน์โหลดชุดข้อมูลที่ใช้งานอยู่ แตกไฟล์ทับโฟลเดอร์ data/ ในโปรเจกต์ แล้ว commit ขึ้น GitHub "
+    "แอปจะอัปเดตเองภายในไม่กี่นาที",
+    icon="💾",
+)
+
+
+def data_zip() -> bytes:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+        for p in sorted(DATA_DIR.glob("*.csv")) + [DATA_DIR / "dataset.json"]:
+            if p.exists():
+                z.write(p, f"data/{p.name}")
+    return buf.getvalue()
+
+
+st.download_button(
+    f"ดาวน์โหลดชุดข้อมูล v{d.meta.get('version', '?')} (.zip)", data_zip(),
+    file_name=f"dataset_v{d.meta.get('version', 'x')}.zip", mime="application/zip",
+)
 
 st.markdown("### ประวัติเวอร์ชัน")
 history = [{"version": d.meta.get("version"), "updated": d.meta.get("updated"), "note": d.meta.get("note", ""),
