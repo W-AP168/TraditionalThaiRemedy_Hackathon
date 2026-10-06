@@ -1,7 +1,11 @@
 {
   "version": "0.1-sample",
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "is_sample": true,
-  "note": "ข้อมูลตัวอย่าง (สังเคราะห์)",
-  "n_recipes": 180
+  "note": "ข้อมูลจำลอง",
+  "books": {
+    "WRO": 120,
+    "NR": 85,
+    "RM": 40
+  }
 }
