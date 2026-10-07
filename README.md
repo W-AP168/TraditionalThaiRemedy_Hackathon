@@ -1,93 +1,74 @@
-# ตำรับยาไทย — Thai Traditional Medicine Knowledge System
+# ThaiRx-AI
 
-From ancient scriptures to data evidence:
+Explainable AI platform that **analyzes**, **recommends** and **discovers** Thai traditional medicine formulas,
+for practitioners, researchers and students. Built from concept paper **ThaiRx-AI ฉบับปรับปรุงครั้งที่ 4 (6 ต.ค. 2569)**.
+Not a prescribing tool and not treatment advice for the public.
 
-```
-Ancient scriptures → Data pipeline → Public knowledge (search, recipes, safety)
-                                   → Research Lab (Apriori, permutation tests) → Knowledge graph
-```
-
-UI design: [Thai Remedy Miner UI Draft](https://claude.ai/artifact/8MK6Y2aqGGNahiEhtnGH4k), page "v2 · ตำรับยาไทย".
-
-## Run it
+Sources: `WRO` ศิลาจารึกวัดราชโอรสาราม · `NR` คัมภีร์โอสถพระนารายณ์ · `RM` ตำรับยาโรงพระโอสถ รัชกาลที่ 2
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The repo ships with a **synthetic sample dataset** (`data/`, 180 recipes) so the app runs today.
-Every page shows a banner while it is in use. The numbers are not results from the real scriptures.
+The repo ships with a **sample (จำลอง) dataset** built from `data/examples/` (`python -m tools.make_sample_data`).
+While it is loaded, every page shows a **จำลอง** badge. Real data shows **คำนวณจริง**.
 
 ## Pages
 
-| Explore (public) | Research Lab 🔬 |
+| Page | What it does |
 | --- | --- |
-| หน้าแรก: hero, two search cards | Research Dashboard: counts, knowledge network, top pairs |
-| สำรวจตำรับ: browse/search all recipes | Apriori Lab: support / confidence / lift sliders, rules table, CSV |
-| ค้นหาอาการ: symptom search, match score | หลักฐานทางสถิติ: observed vs random lift, permutation histogram, p, FDR q |
-| รายละเอียดตำรับ: herbs, safety warning, original text, herb pairs | Knowledge Graph: pick a herb, see partners, "Why this herb?" |
-| คลังสมุนไพร: herb profile + pairs | จัดการข้อมูล: upload Excel, validation report, publish new version |
+| คัดเลือกตำรับ (Recommend) | symptoms/indications → readiness gate on **every** herb (Identity × Availability) → **ผ่านเกณฑ์เพื่อพัฒนา** vs **ตรงโจทย์แต่ยังมีข้อจำกัด** with limiting herbs. Industry / Research mode |
+| วิเคราะห์ตำรับ (Analyze) | 3 separate sections: text as written · patterns from the database (rules, similar recipes by Jaccard, compare 2) · verified modern evidence |
+| สร้างสมมติฐาน (Discover) | candidate herb set from high-lift, well-supported rules, with grades, safety, source recipes. Fixed label: สมมติฐานเพื่อการวิจัย — ต้องประเมินโดยผู้เชี่ยวชาญ |
+| Back-end 🔒 | import + review queue (herb names, synonyms, คณาเภสัช, symptom mapping, duplicates, safety), grade editor, rules + network + permutation test, evaluation dashboard |
 
-Optional password for the Research Lab: create `.streamlit/secrets.toml` with `lab_password = "..."`.
+## Rules that the code enforces
 
-## Code layout
+- **Gate:** no averaging. One failing or ungraded herb fails the recipe; an unresolved name = ข้อมูลไม่พอ. Relevance never moves a recipe between groups (tested with 3 fixtures in `eval/gate_fixtures.py`).
+- **Names:** synonyms and คณาเภสัช apply only when `review_status = verified`. Never auto-merged.
+- **Rules:** typed items `HERB:` `SYMPTOM:` `INDICATION:`; duplicates (`duplicate_of`) excluded by default; every view shows support, confidence, lift, real recipe count, thresholds, denominator, books, data version; < 5 recipes = ข้อมูลน้อย.
+- **Search:** exact term match (no "ตา" inside "ปวดตามข้อ").
+- **Missing input → "ข้อมูลไม่พอ"**, never a guess.
+
+## Code
 
 ```
-app.py                  navigation (Explore / Research Lab)
-ui.py                   theme, cached data access, shared UI pieces
-pages/                  one file per page
-core/
-  data_loader.py        load CSVs, apply synonym dictionary → Dataset
-  search.py             symptom search + match score, herb lookups
-  apriori.py            binary matrix, Apriori, association rules, herb pairs
-  statistics.py         permutation test, Benjamini–Hochberg FDR, interpretation text
-  network.py            knowledge graph (networkx + plotly)
-  safety.py             safety flags per herb / recipe
-  cache.py              disk cache keyed by (dataset fingerprint, parameters)
-preprocessing/
-  prepare_data.py       Excel → validate → normalize → synonyms → checks → publish version
-  make_sample_data.py   regenerates the synthetic sample
-tests/                  unit tests + every page renders
+app.py                      navigation
+prepare_data.py             import team files → data/ (CLI)
+pages/                      0_Home, 1_Recommend, 2_Analyze, 3_Discover, 9_Backend
+backend/                    back-end tabs (data, grades, rules, evaluation)
+core/data.py                data model (spec §4), loading, คณาเภสัช expansion, synonym resolution, versioning
+core/ingest.py              team CSV/Excel → tables (recognised by columns), checks, publish
+core/rules.py               Apriori engine (mlxtend), 3 analysis types, metadata, cache
+core/gate.py                readiness gate     core/recommend.py   match → gate → 2 groups
+core/scoring.py             relevance score, keyword baseline, Precision@k
+core/similarity.py          Jaccard            core/statistics.py  permutation test, FDR
+eval/                       gate fixtures, Precision@5 harness
+team_scripts/               the team's scripts, now on the shared reader
+tests/                      pytest
 ```
 
-Analysis is cached: Apriori and permutation tests rerun only when the data or the settings change.
+## Loading the real data
 
-## Putting in the real data
+Files can have any name; each CSV / Excel sheet is recognised by its columns
+(รหัสตำรับ + ชื่อสมุนไพร → herbs, + อาการ → symptoms, + ข้อบ่งใช้ → indications, + สรรพคุณ/ข้อความต้นฉบับ/วิธีทำ/กระสายยา → recipe info;
+reference tables: herb list, ชื่อพ้อง, คณาเภสัช, grades (identity/availability), คำเตือน). Excel is read with calamine.
 
-Fill an Excel file with one sheet per table (same columns as the CSVs), then either upload it on
-**จัดการข้อมูล**, or run:
+- Website: Back-end → ข้อมูล & ตรวจสอบ → upload → read the checks → เผยแพร่
+- CLI: `python prepare_data.py data/raw` (check) then `python prepare_data.py data/raw --version 0.2`
 
-```bash
-python -m preprocessing.prepare_data cleaned.xlsx --version 1.0 --note "WRO + NR + RM"
-```
+`data/reference/` holds the only defaults shipped: ตรีกฏุก and โกฐทั้ง 5 members and the ไคร้เครือ warning, all taken
+from the concept paper. Sample grades are never carried into real data.
 
-| Sheet / file | Columns (required in **bold**) |
-| --- | --- |
-| prescriptions | **recipe_id**, **scripture_id**, **name_th**, form, original_text, page_ref |
-| ingredients | **recipe_id**, **herb_raw**, amount |
-| symptoms | **recipe_id**, **symptom** |
-| herbs | **herb_id**, **sci_name**, safety_level (`none`/`caution`/`danger`), safety_note |
-| herb_synonyms | **synonym**, **herb_id** |
-| scriptures | **scripture_id**, **name_th**, name_en |
-| symptom_groups | symptom, symptom_group |
+### Inputs still needed from the team (spec §11)
+Herb grading table · INDICATION column · reviewed synonym table · คณาเภสัช member lists (ตรีผลา …) · duplicate flags ·
+RM herbs/symptoms in long format · expert test queries + relevance labels (`data/eval_queries.csv`, `data/eval_labels.csv`) ·
+relevance weights (defaults 1.0 symptom / 0.5 indication, editable in Back-end).
 
-Rules: one row = one herb (or one symptom) of one recipe · no merged cells · every row has a recipe_id.
-Duplicate recipe ids block publishing; empty names and unmapped herbs are warnings.
-Publishing archives the old version in `data/versions/<version>/`.
-
-## The statistics, in one paragraph
-
-Each recipe becomes a row of 0/1 (herb absent/present). Apriori finds herb sets that appear together often.
-For a pair A, B: **lift** = how many times more often they co-occur than if independent.
-To check that this isn't chance, herb B's column is shuffled across recipes 1,000 times (keeps how often each herb
-is used, breaks any link). p = share of shuffles reaching the observed lift. q-values correct for testing many pairs (FDR).
-
-What we claim: *statistically enriched associations observed in historical prescriptions*. These may reflect recurring
-formulation patterns. They are **not** proof of clinical efficacy or causality.
+## Deploy (Streamlit Community Cloud)
+share.streamlit.io → repo, branch, `app.py` → Secrets: `lab_password = "..."` → Deploy.
+Data published on the website is lost on restart: download the zip in Back-end and commit `data/`.
 
 ## Tests
-
-```bash
-python -m pytest
-```
+`python -m pytest`

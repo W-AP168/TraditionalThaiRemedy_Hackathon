@@ -1,0 +1,404 @@
+﻿รหัสตำรับ,ชื่อสมุนไพร,ชื่อวิทยาศาสตร์,ปริมาณ
+NR001/3,หว้านน้ำ,Acorus calamus L.,8 บาท
+NR001/3,ขมิ้นชัน,Curcuma longa L.,1 บาท
+NR001/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),1 บาท
+NR001/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,5 บาท
+NR002/2,ขิงแห้ง,Zingiber officinale Roscoe,8 บาท
+NR002/2,ดีปลี,Piper retrofractum Vahl,7 บาท
+NR002/2,พริกล่อน,Piper nigrum L.,3 บาท
+NR002/2,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,8 บาท
+NR002/2,การบูร,Cinnamomum camphora (L.) J.Presl,6 บาท
+NR002/2,เจตมูลเพลิงแดง,Plumbago indica L.,6 บาท
+NR003/1,สมอไท,Terminalia chebula Retz.,6 ส่วน
+NR003/1,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,8 ส่วน
+NR003/1,มะขามป้อม,Phyllanthus emblica L.,7 ส่วน
+NR003/1,ขิงแห้ง,Zingiber officinale Roscoe,7 ส่วน
+NR003/1,มะกรูด,Citrus hystrix DC.,1 ส่วน
+NR004/3,โกฐเขมา,Atractylodes lancea (Thunb.) DC.,3 สลึง
+NR004/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),5 สลึง
+NR004/3,ขิงแห้ง,Zingiber officinale Roscoe,2 สลึง
+NR004/3,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,8 สลึง
+NR004/3,การบูร,Cinnamomum camphora (L.) J.Presl,4 สลึง
+NR004/3,ไคร้เครือ,Aristolochia pierrei Lecomte,8 สลึง
+NR005/3,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,1 สลึง
+NR005/3,ขมิ้นชัน,Curcuma longa L.,8 สลึง
+NR005/3,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,5 สลึง
+NR005/3,แห้วหมู,Cyperus rotundus L.,4 สลึง
+NR006/2,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,5 สลึง
+NR006/2,ขมิ้นชัน,Curcuma longa L.,1 สลึง
+NR006/2,พริกไทย,Piper nigrum L.,6 สลึง
+NR007/1,แห้วหมู,Cyperus rotundus L.,6 บาท
+NR007/1,ไคร้เครือ,Aristolochia pierrei Lecomte,1 บาท
+NR007/1,พริกล่อน,Piper nigrum L.,2 บาท
+NR007/1,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,4 บาท
+NR008/2,สมอไทย,Terminalia chebula Retz.,3 บาท
+NR008/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,4 บาท
+NR008/2,มะขามป้อม,Phyllanthus emblica L.,1 บาท
+NR008/2,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,3 บาท
+NR008/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),8 บาท
+NR009/3,ขิงแห้ง,Zingiber officinale Roscoe,2 ส่วน
+NR009/3,มะกรูด,Citrus hystrix DC.,2 ส่วน
+NR009/3,การบูร,Cinnamomum camphora (L.) J.Presl,5 ส่วน
+NR009/3,เทียนดำ,Nigella sativa L.,3 ส่วน
+NR009/3,มะขามป้อม,Phyllanthus emblica L.,4 ส่วน
+NR010/2,สมอไทย,Terminalia chebula Retz.,6 บาท
+NR010/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,6 บาท
+NR010/2,มะขามป้อม,Phyllanthus emblica L.,7 บาท
+NR010/2,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,3 บาท
+NR010/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),3 บาท
+NR011/1,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,7 สลึง
+NR011/1,พริกไทย,Piper nigrum L.,6 สลึง
+NR011/1,โกฐจุฬาลัมพา,Artemisia annua L.,1 สลึง
+NR012/2,ขิง,Zingiber officinale Roscoe,4 บาท
+NR012/2,ดีปลี,Piper retrofractum Vahl,5 บาท
+NR012/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,3 บาท
+NR012/2,หว้านน้ำ,Acorus calamus L.,7 บาท
+NR013/1,ไคร้เครือ,Aristolochia pierrei Lecomte,7 บาท
+NR013/1,มะกรูด,Citrus hystrix DC.,5 บาท
+NR013/1,ขิง,Zingiber officinale Roscoe,3 บาท
+NR013/1,การบูร,Cinnamomum camphora (L.) J.Presl,3 บาท
+NR014/2,สมอไทย,Terminalia chebula Retz.,6 ส่วน
+NR014/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,5 ส่วน
+NR014/2,มะขามป้อม,Phyllanthus emblica L.,2 ส่วน
+NR014/2,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,2 ส่วน
+NR014/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 ส่วน
+NR015/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,7 ส่วน
+NR015/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),4 ส่วน
+NR015/3,พริกล่อน,Piper nigrum L.,5 ส่วน
+NR015/3,โกฐเขมา,Atractylodes lancea (Thunb.) DC.,3 ส่วน
+NR016/2,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,8 ส่วน
+NR016/2,ขิง,Zingiber officinale Roscoe,1 ส่วน
+NR016/2,พริกล่อน,Piper nigrum L.,8 ส่วน
+NR017/1,กระวาน,Amomum testaceum Ridl.,7 ส่วน
+NR017/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 ส่วน
+NR017/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),3 ส่วน
+NR017/1,แห้วหมู,Cyperus rotundus L.,4 ส่วน
+NR017/1,ว่านน้ำ,Acorus calamus L.,6 ส่วน
+NR018/3,มะกรูด,Citrus hystrix DC.,3 บาท
+NR018/3,ขมิ้นชัน,Curcuma longa L.,2 บาท
+NR018/3,ชะเอมเทศ,Glycyrrhiza glabra L.,6 บาท
+NR019/1,ขิง,Zingiber officinale Roscoe,3 สลึง
+NR019/1,มะกรูด,Citrus hystrix DC.,5 สลึง
+NR019/1,ขมิ้นชัน,Curcuma longa L.,1 สลึง
+NR019/1,กระเทียม,Allium sativum L.,3 สลึง
+NR019/1,ไคร้เครือ,Aristolochia pierrei Lecomte,6 สลึง
+NR020/3,ขิง,Zingiber officinale Roscoe,3 บาท
+NR020/3,ดีปลี,Piper retrofractum Vahl,8 บาท
+NR020/3,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,3 บาท
+NR020/3,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,7 บาท
+NR020/3,ตะไคร้,Cymbopogon citratus (DC.) Stapf,2 บาท
+NR020/3,โกฐจุฬาลัมพา,Artemisia annua L.,4 บาท
+NR021/1,โกฐทั้ง 5,,3 ส่วน
+NR021/1,ชะเอมเทศ,Glycyrrhiza glabra L.,4 ส่วน
+NR021/1,ว่านน้ำ,Acorus calamus L.,3 ส่วน
+NR022/3,ขิง,Zingiber officinale Roscoe,7 ส่วน
+NR022/3,ดีปลี,Piper retrofractum Vahl,4 ส่วน
+NR022/3,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,2 ส่วน
+NR022/3,ชะเอมเทศ,Glycyrrhiza glabra L.,7 ส่วน
+NR022/3,เทียนดำ,Nigella sativa L.,3 ส่วน
+NR023/2,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,7 สลึง
+NR023/2,แห้วหมู,Cyperus rotundus L.,4 สลึง
+NR023/2,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 สลึง
+NR023/2,สมอไท,Terminalia chebula Retz.,4 สลึง
+NR024/1,ตรีกฏุก,,7 ส่วน
+NR024/1,ขิง,Zingiber officinale Roscoe,6 ส่วน
+NR024/1,ดีปลี,Piper retrofractum Vahl,7 ส่วน
+NR024/1,พริกไทย,Piper nigrum L.,2 ส่วน
+NR024/1,ชะเอมเทศ,Glycyrrhiza glabra L.,5 ส่วน
+NR025/2,กระวาน,Amomum testaceum Ridl.,5 ส่วน
+NR025/2,สมอไทย,Terminalia chebula Retz.,8 ส่วน
+NR025/2,มะกรูด,Citrus hystrix DC.,4 ส่วน
+NR025/2,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,2 ส่วน
+NR025/2,ไคร้เครือ,Aristolochia pierrei Lecomte,6 ส่วน
+NR025/2,ขมิ้นชัน,Curcuma longa L.,8 ส่วน
+NR026/1,สมอไทย,Terminalia chebula Retz.,1 สลึง
+NR026/1,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,4 สลึง
+NR026/1,มะขามป้อม,Phyllanthus emblica L.,8 สลึง
+NR026/1,ชะเอมเทศ,Glycyrrhiza glabra L.,8 สลึง
+NR026/1,ไคร้เครือ,Aristolochia pierrei Lecomte,6 สลึง
+NR027/2,ขิงแห้ง,Zingiber officinale Roscoe,5 ส่วน
+NR027/2,ดีปลี,Piper retrofractum Vahl,6 ส่วน
+NR027/2,มะกรูด,Citrus hystrix DC.,5 ส่วน
+NR027/2,สมอไทย,Terminalia chebula Retz.,2 ส่วน
+NR028/2,ขิงแห้ง,Zingiber officinale Roscoe,5 บาท
+NR028/2,ดีปลี,Piper retrofractum Vahl,6 บาท
+NR028/2,โกฐเชียง,Angelica sinensis (Oliv.) Diels,2 บาท
+NR028/2,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,6 บาท
+NR028/2,ไคร้เครือ,Aristolochia pierrei Lecomte,1 บาท
+NR028/2,พริกไทย,Piper nigrum L.,7 บาท
+NR029/1,ขมิ้นชัน,Curcuma longa L.,3 บาท
+NR029/1,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,8 บาท
+NR029/1,ดีปลี,Piper retrofractum Vahl,8 บาท
+NR029/1,มะกรูด,Citrus hystrix DC.,3 บาท
+NR029/1,ว่านน้ำ,Acorus calamus L.,8 บาท
+NR029/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),4 บาท
+NR029/1,แห้วหมู,Cyperus rotundus L.,2 บาท
+NR030/2,ขิง,Zingiber officinale Roscoe,6 สลึง
+NR030/2,ดีปลี,Piper retrofractum Vahl,3 สลึง
+NR030/2,พริกล่อน,Piper nigrum L.,6 สลึง
+NR030/2,ชะเอมเทศ,Glycyrrhiza glabra L.,1 สลึง
+NR030/2,มะขามป้อม,Phyllanthus emblica L.,2 สลึง
+NR030/2,โกฐเขมา,Atractylodes lancea (Thunb.) DC.,7 สลึง
+NR031/3,ชะเอมเทศ,Glycyrrhiza glabra L.,6 บาท
+NR031/3,มะขามป้อม,Phyllanthus emblica L.,8 บาท
+NR031/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,2 บาท
+NR031/3,มะกรูด,Citrus hystrix DC.,5 บาท
+NR031/3,ขิงแห้ง,Zingiber officinale Roscoe,6 บาท
+NR031/3,โกฐเขมา,Atractylodes lancea (Thunb.) DC.,2 บาท
+NR032/2,โกฐจุฬาลัมพา,Artemisia annua L.,5 สลึง
+NR032/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),5 สลึง
+NR032/2,มะกรูด,Citrus hystrix DC.,5 สลึง
+NR032/2,การบูร,Cinnamomum camphora (L.) J.Presl,7 สลึง
+NR032/2,พริกไทย,Piper nigrum L.,2 สลึง
+NR032/2,ตะไคร้,Cymbopogon citratus (DC.) Stapf,7 สลึง
+NR033/1,ว่านน้ำ,Acorus calamus L.,5 สลึง
+NR033/1,ดีปลี,Piper retrofractum Vahl,6 สลึง
+NR033/1,กระวาน,Amomum testaceum Ridl.,1 สลึง
+NR033/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),8 สลึง
+NR033/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),1 สลึง
+NR033/1,โกฐทั้ง 5,,6 สลึง
+NR034/3,ว่านน้ำ,Acorus calamus L.,3 บาท
+NR034/3,ดีปลี,Piper retrofractum Vahl,1 บาท
+NR034/3,โกฐทั้ง 5,,7 บาท
+NR034/3,ขิงแห้ง,Zingiber officinale Roscoe,2 บาท
+NR034/3,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,6 บาท
+NR035/2,เจตมูลเพลิงแดง,Plumbago indica L.,3 บาท
+NR035/2,โกฐหัวบัว,Ligusticum chuanxiong Hort.,5 บาท
+NR035/2,แห้วหมู,Cyperus rotundus L.,3 บาท
+NR036/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,8 ส่วน
+NR036/2,พริกไทย,Piper nigrum L.,6 ส่วน
+NR036/2,อบเชย,Cinnamomum verum J.Presl,3 ส่วน
+NR036/2,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,2 ส่วน
+NR037/3,กระวาน,Amomum testaceum Ridl.,4 บาท
+NR037/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),4 บาท
+NR037/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 บาท
+NR037/3,ชะเอมเทศ,Glycyrrhiza glabra L.,8 บาท
+NR037/3,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,6 บาท
+NR038/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,5 สลึง
+NR038/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),8 สลึง
+NR038/3,ขิงแห้ง,Zingiber officinale Roscoe,5 สลึง
+NR038/3,มะกรูด,Citrus hystrix DC.,6 สลึง
+NR039/3,ตรีกฏุก,,1 บาท
+NR039/3,ขิง,Zingiber officinale Roscoe,8 บาท
+NR039/3,ดีปลี,Piper retrofractum Vahl,1 บาท
+NR039/3,พริกไทย,Piper nigrum L.,8 บาท
+NR039/3,โกฐจุฬาลัมพา,Artemisia annua L.,4 บาท
+NR040/3,สมอไท,Terminalia chebula Retz.,7 สลึง
+NR040/3,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,4 สลึง
+NR040/3,มะขามป้อม,Phyllanthus emblica L.,4 สลึง
+NR040/3,กระเทียม,Allium sativum L.,3 สลึง
+NR041/1,กระวาน,Amomum testaceum Ridl.,1 บาท
+NR041/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),8 บาท
+NR041/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 บาท
+NR041/1,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,2 บาท
+NR042/2,ดีปลี,Piper retrofractum Vahl,1 บาท
+NR042/2,ขมิ้นชัน,Curcuma longa L.,6 บาท
+NR042/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,6 บาท
+NR042/2,ชะเอมเทศ,Glycyrrhiza glabra L.,1 บาท
+NR042/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 บาท
+NR043/2,ขิง,Zingiber officinale Roscoe,6 ส่วน
+NR043/2,มะกรูด,Citrus hystrix DC.,1 ส่วน
+NR043/2,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,5 ส่วน
+NR043/2,โกฐเชียง,Angelica sinensis (Oliv.) Diels,7 ส่วน
+NR044/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,3 ส่วน
+NR044/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),2 ส่วน
+NR044/3,โกฐหัวบัว,Ligusticum chuanxiong Hort.,8 ส่วน
+NR044/3,ว่านน้ำ,Acorus calamus L.,3 ส่วน
+NR044/3,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,7 ส่วน
+NR044/3,ดีปลี,Piper retrofractum Vahl,6 ส่วน
+NR045/3,สมอไทย,Terminalia chebula Retz.,4 สลึง
+NR045/3,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,5 สลึง
+NR045/3,มะขามป้อม,Phyllanthus emblica L.,6 สลึง
+NR045/3,ขิงแห้ง,Zingiber officinale Roscoe,8 สลึง
+NR045/3,มะกรูด,Citrus hystrix DC.,2 สลึง
+NR046/3,ตรีกฏุก,,3 บาท
+NR046/3,ชะเอมเทศ,Glycyrrhiza glabra L.,7 บาท
+NR046/3,กระเทียม,Allium sativum L.,5 บาท
+NR046/3,ดีปลี,Piper retrofractum Vahl,5 บาท
+NR046/3,ขิง,Zingiber officinale Roscoe,5 บาท
+NR046/3,ตะไคร้,Cymbopogon citratus (DC.) Stapf,6 บาท
+NR047/1,ว่านน้ำ,Acorus calamus L.,5 บาท
+NR047/1,ดีปลี,Piper retrofractum Vahl,5 บาท
+NR047/1,กระวาน,Amomum testaceum Ridl.,4 บาท
+NR047/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),2 บาท
+NR047/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),4 บาท
+NR047/1,ชะเอมเทศ,Glycyrrhiza glabra L.,1 บาท
+NR048/1,ขิงแห้ง,Zingiber officinale Roscoe,4 ส่วน
+NR048/1,ดีปลี,Piper retrofractum Vahl,4 ส่วน
+NR048/1,การบูร,Cinnamomum camphora (L.) J.Presl,5 ส่วน
+NR048/1,แห้วหมู,Cyperus rotundus L.,3 ส่วน
+NR048/1,มะกรูด,Citrus hystrix DC.,8 ส่วน
+NR049/1,ตรีกฏุก,,4 สลึง
+NR049/1,ขิง,Zingiber officinale Roscoe,4 สลึง
+NR049/1,ดีปลี,Piper retrofractum Vahl,2 สลึง
+NR049/1,พริกไทย,Piper nigrum L.,5 สลึง
+NR049/1,มะขามป้อม,Phyllanthus emblica L.,1 สลึง
+NR050/1,กระวาน,Amomum testaceum Ridl.,4 บาท
+NR050/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),2 บาท
+NR050/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 บาท
+NR050/1,ขิง,Zingiber officinale Roscoe,4 บาท
+NR050/1,แห้วหมู,Cyperus rotundus L.,2 บาท
+NR051/3,สมอไทย,Terminalia chebula Retz.,8 บาท
+NR051/3,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,7 บาท
+NR051/3,มะขามป้อม,Phyllanthus emblica L.,2 บาท
+NR051/3,ขิง,Zingiber officinale Roscoe,1 บาท
+NR051/3,มะกรูด,Citrus hystrix DC.,3 บาท
+NR051/3,แห้วหมู,Cyperus rotundus L.,5 บาท
+NR052/1,ขิงแห้ง,Zingiber officinale Roscoe,8 ส่วน
+NR052/1,ดีปลี,Piper retrofractum Vahl,8 ส่วน
+NR052/1,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,8 ส่วน
+NR052/1,ตะไคร้,Cymbopogon citratus (DC.) Stapf,3 ส่วน
+NR052/1,เทียนดำ,Nigella sativa L.,5 ส่วน
+NR053/2,เจตมูลเพลิงแดง,Plumbago indica L.,7 สลึง
+NR053/2,ว่านน้ำ,Acorus calamus L.,8 สลึง
+NR053/2,ไคร้เครือ,Aristolochia pierrei Lecomte,2 สลึง
+NR053/2,พริกไทย,Piper nigrum L.,7 สลึง
+NR053/2,กระเทียม,Allium sativum L.,3 สลึง
+NR054/3,กระวาน,Amomum testaceum Ridl.,5 สลึง
+NR054/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),1 สลึง
+NR054/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),1 สลึง
+NR054/3,โกฐทั้ง 5,,4 สลึง
+NR055/2,กระวาน,Amomum testaceum Ridl.,7 บาท
+NR055/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),3 บาท
+NR055/2,ลูกจันทน์,Myristica fragrans Houtt. (seed),1 บาท
+NR055/2,โกฐทั้ง 5,,6 บาท
+NR055/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,6 บาท
+NR055/2,โกฐจุฬาลัมพา,Artemisia annua L.,4 บาท
+NR056/1,ขิงแห้ง,Zingiber officinale Roscoe,1 ส่วน
+NR056/1,พริกไทย,Piper nigrum L.,4 ส่วน
+NR056/1,กระวาน,Amomum testaceum Ridl.,4 ส่วน
+NR056/1,เทียนดำ,Nigella sativa L.,2 ส่วน
+NR056/1,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,2 ส่วน
+NR057/1,ไคร้เครือ,Aristolochia pierrei Lecomte,3 ส่วน
+NR057/1,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,4 ส่วน
+NR057/1,สมอไทย,Terminalia chebula Retz.,4 ส่วน
+NR058/2,ตะไคร้,Cymbopogon citratus (DC.) Stapf,7 สลึง
+NR058/2,แห้วหมู,Cyperus rotundus L.,8 สลึง
+NR058/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,8 สลึง
+NR058/2,การบูร,Cinnamomum camphora (L.) J.Presl,3 สลึง
+NR059/3,ขิงแห้ง,Zingiber officinale Roscoe,5 ส่วน
+NR059/3,ดีปลี,Piper retrofractum Vahl,5 ส่วน
+NR059/3,เจตมูลเพลิงแดง,Plumbago indica L.,4 ส่วน
+NR059/3,รากไคร้เครือ,Aristolochia pierrei Lecomte,7 ส่วน
+NR059/3,โกฐเชียง,Angelica sinensis (Oliv.) Diels,8 ส่วน
+NR059/3,ชะเอมเทศ,Glycyrrhiza glabra L.,3 ส่วน
+NR059/3,ว่านน้ำ,Acorus calamus L.,3 ส่วน
+NR060/3,ว่านน้ำ,Acorus calamus L.,5 ส่วน
+NR060/3,ดีปลี,Piper retrofractum Vahl,2 ส่วน
+NR060/3,กระวาน,Amomum testaceum Ridl.,1 ส่วน
+NR060/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 ส่วน
+NR060/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 ส่วน
+NR060/3,โกฐสอ,Angelica dahurica (Hoffm.) Benth. & Hook.f. ex Franch. & Sav.,8 ส่วน
+NR061/3,ขิง,Zingiber officinale Roscoe,8 สลึง
+NR061/3,ดีปลี,Piper retrofractum Vahl,2 สลึง
+NR061/3,พริกไทย,Piper nigrum L.,8 สลึง
+NR061/3,มะขามป้อม,Phyllanthus emblica L.,3 สลึง
+NR061/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),6 สลึง
+NR062/2,หว้านน้ำ,Acorus calamus L.,4 สลึง
+NR062/2,ดีปลี,Piper retrofractum Vahl,7 สลึง
+NR062/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,6 สลึง
+NR062/2,สมอไทย,Terminalia chebula Retz.,5 สลึง
+NR062/2,เจตมูลเพลิงแดง,Plumbago indica L.,8 สลึง
+NR063/3,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,2 บาท
+NR063/3,กระวาน,Amomum testaceum Ridl.,6 บาท
+NR063/3,โกฐจุฬาลัมพา,Artemisia annua L.,2 บาท
+NR063/3,มะขามป้อม,Phyllanthus emblica L.,1 บาท
+NR063/3,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,1 บาท
+NR063/3,ว่านน้ำ,Acorus calamus L.,5 บาท
+NR063/3,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,1 บาท
+NR064/1,ว่านน้ำ,Acorus calamus L.,6 บาท
+NR064/1,ดีปลี,Piper retrofractum Vahl,8 บาท
+NR064/1,กระวาน,Amomum testaceum Ridl.,2 บาท
+NR064/1,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 บาท
+NR064/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),7 บาท
+NR064/1,โกฐหัวบัว,Ligusticum chuanxiong Hort.,8 บาท
+NR064/1,ขมิ้นชัน,Curcuma longa L.,4 บาท
+NR065/1,ตรีกฏุก,,6 ส่วน
+NR065/1,ชะเอมเทศ,Glycyrrhiza glabra L.,4 ส่วน
+NR065/1,อบเชย,Cinnamomum verum J.Presl,8 ส่วน
+NR066/2,ชะเอมเทศ,Glycyrrhiza glabra L.,8 ส่วน
+NR066/2,มะขามป้อม,Phyllanthus emblica L.,4 ส่วน
+NR066/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),7 ส่วน
+NR066/2,โกฐเชียง,Angelica sinensis (Oliv.) Diels,4 ส่วน
+NR066/2,กระเทียม,Allium sativum L.,1 ส่วน
+NR067/1,กระวาน,Amomum testaceum Ridl.,1 สลึง
+NR067/1,ชะเอมเทศ,Glycyrrhiza glabra L.,8 สลึง
+NR067/1,มะขามป้อม,Phyllanthus emblica L.,5 สลึง
+NR067/1,อบเชย,Cinnamomum verum J.Presl,3 สลึง
+NR067/1,สมอไทย,Terminalia chebula Retz.,5 สลึง
+NR068/2,ขิง,Zingiber officinale Roscoe,8 ส่วน
+NR068/2,ดีปลี,Piper retrofractum Vahl,2 ส่วน
+NR068/2,เจตมูลเพลิงแดง,Plumbago indica L.,6 ส่วน
+NR068/2,แห้วหมู,Cyperus rotundus L.,3 ส่วน
+NR069/3,ขิง,Zingiber officinale Roscoe,8 สลึง
+NR069/3,ดีปลี,Piper retrofractum Vahl,2 สลึง
+NR069/3,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,8 สลึง
+NR070/1,ลูกจันทน์,Myristica fragrans Houtt. (seed),4 ส่วน
+NR070/1,โกฐเขมา,Atractylodes lancea (Thunb.) DC.,2 ส่วน
+NR070/1,การบูร,Cinnamomum camphora (L.) J.Presl,2 ส่วน
+NR070/1,โกฐเชียง,Angelica sinensis (Oliv.) Diels,5 ส่วน
+NR070/1,ชะเอมเทศ,Glycyrrhiza glabra L.,4 ส่วน
+NR070/1,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,3 ส่วน
+NR070/1,ไคร้เครือ,Aristolochia pierrei Lecomte,6 ส่วน
+NR071/2,ตรีกฏุก,,7 ส่วน
+NR071/2,ขิง,Zingiber officinale Roscoe,8 ส่วน
+NR071/2,ดีปลี,Piper retrofractum Vahl,5 ส่วน
+NR071/2,พริกไทย,Piper nigrum L.,5 ส่วน
+NR072/2,ชะเอมเทศ,Glycyrrhiza glabra L.,6 บาท
+NR072/2,โกฐเชียง,Angelica sinensis (Oliv.) Diels,5 บาท
+NR072/2,ขมิ้นชัน,Curcuma longa L.,3 บาท
+NR072/2,พริกไทย,Piper nigrum L.,1 บาท
+NR072/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,7 บาท
+NR072/2,โกฐหัวบัว,Ligusticum chuanxiong Hort.,8 บาท
+NR073/2,ขิง,Zingiber officinale Roscoe,5 ส่วน
+NR073/2,ดีปลี,Piper retrofractum Vahl,8 ส่วน
+NR073/2,ตะไคร้,Cymbopogon citratus (DC.) Stapf,4 ส่วน
+NR073/2,กระเทียม,Allium sativum L.,8 ส่วน
+NR074/1,สมอไทย,Terminalia chebula Retz.,6 ส่วน
+NR074/1,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,4 ส่วน
+NR074/1,มะขามป้อม,Phyllanthus emblica L.,4 ส่วน
+NR074/1,โกฐหัวบัว,Ligusticum chuanxiong Hort.,7 ส่วน
+NR075/3,หว้านน้ำ,Acorus calamus L.,7 ส่วน
+NR075/3,ดีปลี,Piper retrofractum Vahl,4 ส่วน
+NR075/3,การบูร,Cinnamomum camphora (L.) J.Presl,2 ส่วน
+NR075/3,ลูกจันทน์,Myristica fragrans Houtt. (seed),8 ส่วน
+NR076/2,ว่านน้ำ,Acorus calamus L.,1 สลึง
+NR076/2,ดีปลี,Piper retrofractum Vahl,2 สลึง
+NR076/2,สมอพิเภก,Terminalia bellirica (Gaertn.) Roxb.,3 สลึง
+NR077/3,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,2 บาท
+NR077/3,ดอกจันทน์,Myristica fragrans Houtt. (aril),6 บาท
+NR077/3,ขิง,Zingiber officinale Roscoe,8 บาท
+NR077/3,มะกรูด,Citrus hystrix DC.,2 บาท
+NR077/3,โกฐจุฬาลัมพา,Artemisia annua L.,1 บาท
+NR078/3,ตรีกฏุก,,3 ส่วน
+NR078/3,ขิง,Zingiber officinale Roscoe,3 ส่วน
+NR078/3,ดีปลี,Piper retrofractum Vahl,5 ส่วน
+NR078/3,พริกไทย,Piper nigrum L.,5 ส่วน
+NR078/3,ชะเอมเทศ,Glycyrrhiza glabra L.,6 ส่วน
+NR079/2,ขิง,Zingiber officinale Roscoe,3 สลึง
+NR079/2,ดีปลี,Piper retrofractum Vahl,8 สลึง
+NR079/2,โกฐจุฬาลัมพา,Artemisia annua L.,2 สลึง
+NR079/2,อบเชย,Cinnamomum verum J.Presl,3 สลึง
+NR080/3,กระเทียม,Allium sativum L.,3 สลึง
+NR080/3,ว่านน้ำ,Acorus calamus L.,2 สลึง
+NR080/3,แห้วหมู,Cyperus rotundus L.,1 สลึง
+NR081/3,ตรีกฏุก,,2 สลึง
+NR081/3,ชะเอมเทศ,Glycyrrhiza glabra L.,5 สลึง
+NR081/3,มะขามป้อม,Phyllanthus emblica L.,6 สลึง
+NR082/3,ไพล,Zingiber montanum (J.Koenig) Link ex A.Dietr.,1 ส่วน
+NR082/3,ขมิ้นชัน,Curcuma longa L.,8 ส่วน
+NR082/3,เถาวัลย์เปรียง,Derris scandens (Roxb.) Benth.,7 ส่วน
+NR082/3,ขิง,Zingiber officinale Roscoe,7 ส่วน
+NR082/3,พริกไทย,Piper nigrum L.,4 ส่วน
+NR083/1,ขิง,Zingiber officinale Roscoe,8 สลึง
+NR083/1,มะกรูด,Citrus hystrix DC.,4 สลึง
+NR083/1,อบเชย,Cinnamomum verum J.Presl,3 สลึง
+NR083/1,ไคร้เครือ,Aristolochia pierrei Lecomte,7 สลึง
+NR084/2,ดอกจันทน์,Myristica fragrans Houtt. (aril),6 บาท
+NR084/2,มะขามป้อม,Phyllanthus emblica L.,5 บาท
+NR084/2,ขมิ้นชัน,Curcuma longa L.,7 บาท
+NR084/2,มะกรูด,Citrus hystrix DC.,2 บาท
+NR085/2,บอระเพ็ด,Tinospora crispa (L.) Hook.f. & Thomson,4 บาท
+NR085/2,ชะเอมเทศ,Glycyrrhiza glabra L.,3 บาท
+NR085/2,ว่านน้ำ,Acorus calamus L.,4 บาท
+NR085/2,กานพลู,Syzygium aromaticum (L.) Merr. & L.M.Perry,7 บาท
